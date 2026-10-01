@@ -1,0 +1,183 @@
+.page {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 64px 24px 48px;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.hero h1 {
+  font-size: 44px;
+  letter-spacing: -0.5px;
+}
+
+.hero .title {
+  margin-top: 10px;
+  font-size: 17px;
+  color: var(--text-dim);
+}
+
+.hero .contact {
+  margin-top: 16px;
+  font-size: 15px;
+}
+
+.hero .divider {
+  margin: 0 10px;
+  color: var(--text-dim);
+}
+
+.section {
+  margin-bottom: 48px;
+}
+
+.section h2 {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  color: var(--accent);
+  margin-bottom: 16px;
+}
+
+.summary {
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--text);
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.skill-group h3 {
+  font-size: 14px;
+  color: var(--text-h);
+  margin-bottom: 10px;
+}
+
+.pill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.pill-list li {
+  font-size: 13px;
+  padding: 5px 10px;
+  border-radius: 6px;
+  background: var(--accent-bg);
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+
+.card {
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 20px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 14px;
+}
+
+.card h3 {
+  font-size: 17px;
+}
+
+.company {
+  font-size: 14px;
+  color: var(--text-dim);
+  margin-top: 4px;
+}
+
+.period {
+  font-size: 13px;
+  color: var(--text-dim);
+  white-space: nowrap;
+}
+
+.bullets li {
+  position: relative;
+  padding-left: 18px;
+  margin-bottom: 8px;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.bullets li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 9px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.bullets.plain li::before {
+  background: var(--text-dim);
+}
+
+.projects-grid {
+  display: grid;
+  gap: 20px;
+}
+
+.project-desc {
+  font-size: 14px;
+  color: var(--text-dim);
+  margin: 6px 0 14px;
+}
+
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.languages-heading {
+  margin-top: 28px;
+}
+
+.edu-degree {
+  font-size: 15px;
+  color: var(--text-h);
+}
+
+.edu-school {
+  font-size: 14px;
+  color: var(--text-dim);
+  margin-top: 4px;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+  font-size: 13px;
+  color: var(--text-dim);
+}
+
+@media (max-width: 640px) {
+  .hero h1 {
+    font-size: 32px;
+  }
+  .two-col {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
