@@ -40,6 +40,7 @@ export const experience = [
     role: 'Senior Application Developer — Java Full Stack',
     period: 'April 2018 – Present (7 Years)',
     client: 'Client: Prudential Financial',
+    location: 'Onsite – United States (June 2022 – Present)',
     highlights: [
       'Designed and built high-performance microservices using Spring Boot, MyBatis, and DynamoDB to support mapping, transformation, validation, and orchestration flows.',
       'Developed dynamic SQL generation, custom formula engines, field transformation rules, and data-validation services; optimized MyBatis queries, reducing response times by 40–60%.',

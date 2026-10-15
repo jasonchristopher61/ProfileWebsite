@@ -44,6 +44,7 @@ function App() {
                 <div>
                   <h3>{job.role}</h3>
                   <p className="company">{job.company} · {job.client}</p>
+                  {job.location && <p className="location">{job.location}</p>}
                 </div>
                 <span className="period">{job.period}</span>
               </div>
