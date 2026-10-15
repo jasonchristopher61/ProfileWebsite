@@ -1,14 +1,22 @@
-:root {
-  --bg: #0f1115;
-  --bg-elev: #171a21;
-  --border: #272b35;
-  --text: #c3c8d1;
-  --text-h: #f3f4f6;
-  --text-dim: #7a818f;
-  --accent: #c084fc;
-  --accent-bg: rgba(192, 132, 252, 0.12);
+@import '@fontsource/poppins/400.css';
+@import '@fontsource/poppins/500.css';
+@import '@fontsource/poppins/600.css';
+@import '@fontsource/poppins/700.css';
 
-  font: 17px/1.6 system-ui, 'Segoe UI', Roboto, sans-serif;
+:root {
+  --bg: #0a0b10;
+  --bg-elev: rgba(255, 255, 255, 0.04);
+  --bg-elev-solid: #14161d;
+  --border: rgba(255, 255, 255, 0.09);
+  --text: #c3c8d1;
+  --text-h: #f6f7fb;
+  --text-dim: #868d9b;
+  --accent: #c084fc;
+  --accent-2: #60a5fa;
+  --accent-bg: rgba(192, 132, 252, 0.12);
+  --gradient: linear-gradient(120deg, #c084fc, #818cf8 50%, #60a5fa);
+
+  font: 17px/1.6 'Poppins', system-ui, 'Segoe UI', Roboto, sans-serif;
   color-scheme: dark;
   color: var(--text);
   background: var(--bg);
@@ -16,6 +24,7 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -24,6 +33,7 @@
 
 body {
   margin: 0;
+  overflow-x: hidden;
 }
 
 h1, h2, h3 {
@@ -41,12 +51,33 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  text-decoration: underline;
-}
-
 ul {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+::selection {
+  background: var(--accent-bg);
+  color: var(--text-h);
+}
+
+/* Scroll-reveal primitive used by <Reveal> */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
 }
