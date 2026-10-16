@@ -7,30 +7,85 @@ export const profile = {
     'Results-driven Full Stack Developer with 7+ years of experience designing and delivering scalable, cloud-native applications. Expertise in building high-performance microservices using Java and Spring Boot, along with dynamic, user-centric frontends using Angular and React. Proficient in AWS cloud services, CI/CD pipelines, and containerization. Recently deepened frontend expertise through advanced React training and strengthened AI capabilities through IBM Watsonx training, building a PoC that auto-generates JIRA stories from requirement documents.',
 }
 
+// level: 'Expert' (deep, years of hands-on production use) ·
+// 'Advanced' (solid working proficiency) · 'Familiar' (used it, still building depth)
 export const skills = [
   {
     category: 'Frontend Development',
-    items: ['Angular', 'React.js', 'TypeScript', 'JavaScript (ES6+)', 'HTML5', 'CSS3', 'Bootstrap', 'Responsive UI', 'WCAG Accessibility'],
+    items: [
+      { name: 'Angular', level: 'Expert' },
+      { name: 'React.js', level: 'Advanced' },
+      { name: 'TypeScript', level: 'Advanced' },
+      { name: 'JavaScript (ES6+)', level: 'Expert' },
+      { name: 'HTML5', level: 'Expert' },
+      { name: 'CSS3', level: 'Expert' },
+      { name: 'Bootstrap', level: 'Advanced' },
+      { name: 'Responsive UI', level: 'Advanced' },
+      { name: 'WCAG Accessibility', level: 'Advanced' },
+    ],
   },
   {
     category: 'Backend & Microservices',
-    items: ['Java 8/11', 'Spring Boot', 'Microservices', 'REST APIs', 'JPA', 'MyBatis/iBatis', 'Hibernate', 'JWT', 'OAuth'],
+    items: [
+      { name: 'Java 8/11', level: 'Expert' },
+      { name: 'Spring Boot', level: 'Expert' },
+      { name: 'Microservices', level: 'Expert' },
+      { name: 'REST APIs', level: 'Expert' },
+      { name: 'JPA', level: 'Advanced' },
+      { name: 'MyBatis/iBatis', level: 'Expert' },
+      { name: 'Hibernate', level: 'Advanced' },
+      { name: 'JWT', level: 'Advanced' },
+      { name: 'OAuth', level: 'Advanced' },
+    ],
   },
   {
     category: 'Cloud & DevOps',
-    items: ['AWS (S3, EC2, ECS, DynamoDB, CloudWatch, ECR)', 'Jenkins', 'AWS CodePipeline', 'Docker', 'Kubernetes'],
+    items: [
+      { name: 'AWS (S3, EC2, ECS, DynamoDB, CloudWatch, ECR)', level: 'Advanced' },
+      { name: 'Jenkins', level: 'Advanced' },
+      { name: 'AWS CodePipeline', level: 'Advanced' },
+      { name: 'Docker', level: 'Advanced' },
+      { name: 'Kubernetes', level: 'Familiar' },
+    ],
   },
   {
     category: 'Data & Storage',
-    items: ['MySQL', 'Oracle', 'DB2', 'MongoDB', 'DynamoDB'],
+    items: [
+      { name: 'MySQL', level: 'Advanced' },
+      { name: 'Oracle', level: 'Advanced' },
+      { name: 'DB2', level: 'Advanced' },
+      { name: 'MongoDB', level: 'Familiar' },
+      { name: 'DynamoDB', level: 'Expert' },
+    ],
+  },
+  {
+    category: 'Testing & QA',
+    items: [
+      { name: 'JUnit', level: 'Expert' },
+      { name: 'Mockito', level: 'Advanced' },
+      { name: 'Playwright', level: 'Advanced' },
+      { name: 'Cypress', level: 'Advanced' },
+    ],
   },
   {
     category: 'Tools & Practices',
-    items: ['Git', 'Maven', 'Gradle', 'Postman', 'JIRA', 'Agile/Scrum', 'JUnit', 'Mockito'],
+    items: [
+      { name: 'Git', level: 'Expert' },
+      { name: 'Maven', level: 'Advanced' },
+      { name: 'Gradle', level: 'Advanced' },
+      { name: 'Postman', level: 'Advanced' },
+      { name: 'JIRA', level: 'Expert' },
+      { name: 'Agile/Scrum', level: 'Expert' },
+    ],
   },
   {
     category: 'AI & Automation',
-    items: ['Watsonx.ai Integration', 'Apigee API Gateway', 'Excel/CSV Processing Pipelines', 'Performance Optimization'],
+    items: [
+      { name: 'Watsonx.ai Integration', level: 'Advanced' },
+      { name: 'Apigee API Gateway', level: 'Advanced' },
+      { name: 'Excel/CSV Processing Pipelines', level: 'Expert' },
+      { name: 'Performance Optimization', level: 'Expert' },
+    ],
   },
 ]
 

@@ -5,9 +5,12 @@ const ICONS = {
   'Backend & Microservices': '⚙️',
   'Cloud & DevOps': '☁️',
   'Data & Storage': '🗄️',
+  'Testing & QA': '🧪',
   'Tools & Practices': '🛠️',
   'AI & Automation': '🤖',
 }
+
+const LEVELS = ['Expert', 'Advanced', 'Familiar']
 
 export default function Skills({ groups }) {
   const [active, setActive] = useState(0)
@@ -30,11 +33,26 @@ export default function Skills({ groups }) {
         ))}
       </div>
 
+      <div className="skill-legend">
+        {LEVELS.map((level) => (
+          <span className="skill-legend-item" key={level}>
+            <span className={`skill-level-bar skill-level-${level.toLowerCase()}`} />
+            {level}
+          </span>
+        ))}
+      </div>
+
       <div className="skills-panel glass" key={activeGroup.category}>
         <div className="skill-cloud">
           {activeGroup.items.map((item, i) => (
-            <span className="skill-chip" style={{ animationDelay: `${i * 35}ms` }} key={item}>
-              {item}
+            <span
+              className="skill-chip"
+              style={{ animationDelay: `${i * 35}ms` }}
+              key={item.name}
+              title={item.level}
+            >
+              <span className="skill-chip-name">{item.name}</span>
+              <span className={`skill-level-bar skill-level-${item.level.toLowerCase()}`} />
             </span>
           ))}
         </div>
