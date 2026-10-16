@@ -1,6 +1,7 @@
 import { profile, skills, experience, projects, certifications, education, languages } from './data/resume'
 import Nav from './components/Nav'
 import Reveal from './components/Reveal'
+import Skills from './components/Skills'
 import WalkingAvatar from './components/WalkingAvatar'
 import BackToTop from './components/BackToTop'
 import './App.css'
@@ -41,20 +42,9 @@ function App() {
           <Reveal>
             <h2 className="section-label">Skills</h2>
           </Reveal>
-          <div className="skills-grid">
-            {skills.map((group, i) => (
-              <Reveal delay={i * 60} key={group.category}>
-                <div className="skill-group glass">
-                  <h3>{group.category}</h3>
-                  <ul className="pill-list">
-                    {group.items.map((item) => (
-                      <li key={item}>{item}</li>
-                    ))}
-                  </ul>
-                </div>
-              </Reveal>
-            ))}
-          </div>
+          <Reveal>
+            <Skills groups={skills} />
+          </Reveal>
         </section>
 
         <section className="section" id="experience">
