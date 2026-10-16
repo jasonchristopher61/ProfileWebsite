@@ -6,6 +6,13 @@ import WalkingAvatar from './components/WalkingAvatar'
 import BackToTop from './components/BackToTop'
 import './App.css'
 
+const stats = [
+  { value: '7+', label: 'Years of Experience' },
+  { value: certifications.length, label: 'Certifications' },
+  { value: '60%', label: 'Faster Response Times' },
+  { value: '2022', label: 'Onsite in the U.S. Since' },
+]
+
 function App() {
   return (
     <div className="page">
@@ -34,8 +41,22 @@ function App() {
         <section className="section" id="about">
           <Reveal>
             <h2 className="section-label">Summary</h2>
-            <p className="summary">{profile.summary}</p>
           </Reveal>
+          <div className="about-grid">
+            <Reveal className="about-bio">
+              <p className="summary">
+                <strong className="summary-lead">{profile.summaryLead}</strong> {profile.summaryRest}
+              </p>
+            </Reveal>
+            <Reveal delay={120} className="about-stats">
+              {stats.map((s) => (
+                <div className="stat-card glass" key={s.label}>
+                  <span className="stat-value">{s.value}</span>
+                  <span className="stat-label">{s.label}</span>
+                </div>
+              ))}
+            </Reveal>
+          </div>
         </section>
 
         <section className="section" id="skills">

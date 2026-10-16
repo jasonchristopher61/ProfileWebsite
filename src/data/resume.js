@@ -3,8 +3,9 @@ export const profile = {
   title: 'Senior Software Engineer | Full Stack Developer (Angular | React | AWS)',
   email: 'jasonchristopher61@gmail.com',
   phone: '+91 8015212836',
-  summary:
-    'Results-driven Full Stack Developer with 7+ years of experience designing and delivering scalable, cloud-native applications. Expertise in building high-performance microservices using Java and Spring Boot, along with dynamic, user-centric frontends using Angular and React. Proficient in AWS cloud services, CI/CD pipelines, and containerization. Recently deepened frontend expertise through advanced React training and strengthened AI capabilities through IBM Watsonx training, building a PoC that auto-generates JIRA stories from requirement documents.',
+  summaryLead: 'I turn complex business requirements into fast, reliable, cloud-native systems.',
+  summaryRest:
+    "Over the past 7+ years I've built high-throughput Java and Spring Boot microservices alongside polished Angular and React front ends — tuning performance along the way, including a recent optimization that cut backend response times by up to 60%. Lately I've been pushing further into AI-assisted engineering, building a Watsonx.ai-powered tool that turns requirement documents straight into JIRA stories.",
 }
 
 // level: 'Expert' (deep, years of hands-on production use) ·
